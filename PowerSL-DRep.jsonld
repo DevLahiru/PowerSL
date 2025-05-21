@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP100:IdentityReference",
+            "Link": "CIP100:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:update-uri"
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "title": "CIP108:title",
+        "abstract": "CIP108:abstract",
+        "rationale": "CIP108:rationale",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "title": "PowerSL",
+    "givenName": "PowerSL",
+    "paymentAddress": "00085fbc5e2b8f9f2237e95db798365c3356f05d2fc7817abec3b29093a32e07ed8458116524cb3bf6d08a8e30b2747b65c491a0819012bebb",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Website",
+        "uri": "xxx.xxx"
+      },
+      {
+        "@type": "Link",
+        "label": "Twitter",
+        "uri": "x.com/xxx"
+      },
+      {
+        "@type": "Identity",
+        "label": "GitHub",
+        "uri": "github.com/u/xxxx"
+      },
+      {
+        "@type": "Other",
+        "label": "ABC",
+        "uri": "ph.com/xxxx"
+      }
+    ],
+    "bio": "It is not death that a man should fear, but he should fear never beginning to live",
+    "objectives": "Describe what you aim to achieve as a DRep.",
+    "motivations": "Explain what motivates you to serve as a DRep.",
+    "qualifications": "List your relevant experience and qualifications.",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://favianna.com/static/img/home/carousel/intersectionality.jpg"
+    }
+  },
+  "authors": [
+    {
+      "name": "PowerSL"
+    }
+  ]
+}
