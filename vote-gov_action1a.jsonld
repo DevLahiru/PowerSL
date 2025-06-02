@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "comment": "CIP100:comment",
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "comment": "Vote: Yes\n\nloo bee hoo",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Governance Action",
+        "uri": "https://cardanoscan.io/transaction/e902bac617c6a9be7e749bc5137ab0a7e06b7044ac54a41dcfe7bd3056eb1495?tab=utxo#0"
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "XXX PowerSL"
+    }
+  ]
+}
