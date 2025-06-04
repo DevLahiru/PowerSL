@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP100:IdentityReference",
+            "Link": "CIP100:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:update-uri"
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "bio": "http://schema.org/description",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "http://schema.org/contentUrl"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "title": "CIP108:title",
+        "abstract": "CIP108:abstract",
+        "rationale": "CIP108:rationale",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "title": "testdrepaf",
+    "givenName": "testdrepaf",
+    "paymentAddress": "addr_test1qzuchuswxhnnnqknxy4pq9lhz4v4pf45sfyg4ljgpmjsym570aqgdvlela8lafh5vj4y4rh4fzcsnge2xmz92zlqa66qt4y3z3",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Website",
+        "uri": "boo.com"
+      }
+    ],
+    "bio": "Enter a brief introduction about yourself or your organization.",
+    "objectives": "Describe what you aim to achieve as a DRep.",
+    "motivations": "Explain what motivates you to serve as a DRep.",
+    "qualifications": "List your relevant experience and qualifications.",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwfRaRj5g8M8X7OmrcZMplIW1PE8QtvOhtUIWwtwAWpYyGCD8WPXhlhRjzcE9a497XLVM&usqp=CAU"
+    }
+  },
+  "authors": [
+    {
+      "name": "testdrepaf"
+    }
+  ]
+}
